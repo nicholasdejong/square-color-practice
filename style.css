@@ -1,0 +1,68 @@
+body {
+    background-color: rgb(19, 19, 19);
+}
+/* Black and White Choice */
+#choice-wrapper  {
+    position: absolute;
+    /*  */
+    /* border: 2px solid; */
+    /*  */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 220px;
+    height: 110px;
+    align-self: flex-end;
+}
+.color {
+    width: 100px;
+    height: 100px;
+    border: 2px solid;
+    cursor: pointer;
+}
+#white {
+    background-color: white;
+    transition: background-color 0.3s;
+}
+#white:hover {
+    background-color: rgb(194, 194, 194);
+}
+#black {
+    background-color: black;
+    transition: background-color 0.3s;
+}
+#black:hover {
+    background-color: rgb(8, 8, 8);
+}
+/* Square Text */
+#square-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*  */
+    /* border: 2px solid; */
+    /*  */
+    height: 500px;
+    text-align: center;
+}
+#square {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: 40px;
+    user-select: none;
+    color: white;
+    /*  */
+    /* border: 2px solid; */
+    /*  */
+}
+#streak-wrapper {
+    padding-top: 70px;
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    user-select: none;
+    /* border: 2px solid; */
+}
+.streak-item {
+    display: inline-block;
+}
